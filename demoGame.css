@@ -1,0 +1,42 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: salmon;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#memoryCard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.card.flipped {
+    background-color: #fff;
+    cursor: default;
+}
+.hidden {
+    visibility: hidden;
+}
